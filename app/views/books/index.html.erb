@@ -1,1 +1,12 @@
 <h1>Books are coming soon!</h1>
+
+<%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, "I am younger than 21") %>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, "I'm over 21") %>
+
+<%= select_date Date.today, :prefix => :start_date %>
+
+<%= form_tag do %>
+  <%= file_field_tag 'picture' %>
+<% end %>
